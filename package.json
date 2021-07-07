@@ -1,0 +1,57 @@
+{
+    "name": "shell",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "run-p dev:*",
+        "build": "cross-env NODE_ENV=production run-s build:*",
+        "dev:routify": "routify",
+        "dev:vite": "vite",
+        "build:routify": "routify -b",
+        "build:vite": "vite build",
+        "xbuild:static": "spank",
+        "serve": "vite preview"
+    },
+    "devDependencies": {
+        "@fortawesome/free-solid-svg-icons": "^5.15.3",
+        "@pnotify/animate": "^5.2.0",
+        "@pnotify/confirm": "^5.2.0",
+        "@pnotify/core": "^5.2.0",
+        "@pnotify/countdown": "^5.2.0",
+        "@pnotify/desktop": "^5.2.0",
+        "@pnotify/font-awesome5": "^5.2.0",
+        "@pnotify/mobile": "^5.2.0",
+        "@roxi/routify": "^2.17.2",
+        "@sveltejs/vite-plugin-svelte": "^1.0.0-next.7",
+        "animate.css": "^4.1.1",
+        "autoprefixer": "^10.2.5",
+        "carbon-components-svelte": "^0.32.2",
+        "carbon-icons-svelte": "^10.28.0",
+        "clipboard-copy": "^4.0.1",
+        "cross-env": "^7.0.3",
+        "cssnano": "^5.0.1",
+        "font-awesome": "^4.7.0",
+        "lodash": "^4.17.21",
+        "npm-run-all": "^4.1.5",
+        "pnotify": "^5.2.0",
+        "postcss": "^8.2.10",
+        "postcss-load-config": "^3.0.1",
+        "svelte": "^3.37.0",
+        "svelte-forms-lib": "^1.10.3",
+        "svelte-grid": "^4.0.2",
+        "svelte-loading-spinners": "^0.1.4",
+        "svelte-preprocess": "^4.7.1",
+        "tailwindcss": "^2.1.1",
+        "typescript": "^4.2.4",
+        "vite": "^2.2.3",
+        "yup": "^0.32.9"
+    },
+    "appConfig": {
+        "port": 3005,
+        "assetsDir": "public"
+    },
+    "dependencies": {
+        "firebase": "^8.7.0",
+        "spank": "^1.7.0",
+        "sweetalert2": "^11.0.18"
+    }
+}
